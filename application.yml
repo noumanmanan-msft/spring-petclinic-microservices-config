@@ -54,9 +54,6 @@ management:
     export:
       prometheus:
         enabled: true
-  tracing:
-    sampling:
-      probability: 1
 
 # Chaos Engineering
 ---
@@ -88,4 +85,4 @@ spring:
     init:
       schema-locations: classpath*:db/mysql/schema.sql
       data-locations: classpath*:db/mysql/data.sql
-      init: ALWAYS
+      mode: ALWAYS
